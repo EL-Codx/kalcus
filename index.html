@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalcus</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+       <form>
+            <sectiion class="sec-1">
+                <input type="text" name="display" disabled>
+            </sectiion>
+            <section class="sec-2">
+                    <div class="d-1">
+                        <input type="button" class="btn-box operators" value="AC" onclick="display.value = ''">
+                        <input type="button" class="btn-box operators" value="Del" onclick="display.value = display.value.toString().slice(0,-1)">
+                        <input type="button" class="btn-box operators" value="." onclick="display.value += '.'">
+                        <input type="button" class="btn-box operators" value="/" onclick="display.value += '/'">
+                    </div>
+                    <div>
+                        <input type="button" class="btn-box" value="7" onclick="display.value += '7'">
+                        <input type="button" class="btn-box" value="8" onclick="display.value += '8'">
+                        <input type="button" class="btn-box" value="9" onclick="display.value += '9'">
+                        <input type="button" class="btn-box operators" value="*" onclick="display.value += '*'">
+                    </div>
+                    <div>
+                        <input type="button" class="btn-box" value="4" onclick="display.value += '4'">
+                        <input type="button" class="btn-box" value="5" onclick="display.value += '5'">
+                        <input type="button" class="btn-box" value="6" onclick="display.value += '6'">
+                        <input type="button" class="btn-box operators" value="-" onclick="display.value += '-'">
+                    </div>
+                    <div>
+                        <input type="button" class="btn-box" value="1" onclick="display.value += '1'">
+                        <input type="button" class="btn-box" value="2" onclick="display.value += '2'">
+                        <input type="button" class="btn-box" value="3" onclick="display.value += '3'">
+                        <input type="button" class="btn-box operators" value="+" onclick="display.value += '+'">
+                    </div>      
+                    <div class="last">
+                        <input type="button" class="btn-box" value="00" onclick="display.value += '00'">
+                        <input type="button" class="btn-box" value="0" onclick="display.value += '0'">
+                        <input type="button" class="btn-box equal operators" value="=" onclick="display.value = eval(display.value)">
+                    </div>
+            </section>
+       </form>
+     </div>
+
+
+     <script>
+
+     </script>
+</body>
+</html>
